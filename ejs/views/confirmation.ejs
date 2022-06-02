@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Visualization</title>
+        <style>
+            button {
+                cursor: pointer;
+            }
+            img {
+                float:left;
+            }
+            div {
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="image" src="">
+        <br><br><br><br>
+        <div>
+        <h4>작업 단위</h4>
+        <form>
+            <button id="task1_core" type="button">task1</button>
+            <button id="task2_core" type="button">task2</button>
+            <button id="task3_core" type="button">task3</button>
+            <button id="task4_core" type="button">task4</button>
+            <button id="task5_core" type="button">task5</button>
+            <br>
+        </form>
+        <h4>코어 단위</h4>
+        <form>
+            <button id="core1_task" type="button">core1</button>
+            <button id="core2_task" type="button">core2</button>
+            <button id="core3_task" type="button">core3</button>
+            <button id="core4_task" type="button">core4</button>
+            <button id="core5_task" type="button">core5</button>
+        </form>
+        </div>
+        <br><br><a href='/'>뒤로가기</a>
+    </body>
+</html>
+
+<script>
+    let task1_core = document.getElementById("task1_core");
+    let task2_core = document.getElementById("task2_core");
+    let task3_core = document.getElementById("task3_core");
+    let task4_core = document.getElementById("task4_core");
+    let task5_core = document.getElementById("task5_core");
+    let core1_task = document.getElementById("core1_task");
+    let core2_task = document.getElementById("core2_task");
+    let core3_task = document.getElementById("core3_task");
+    let core4_task = document.getElementById("core4_task");
+    let core5_task = document.getElementById("core5_task");
+
+    task1_core.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/task1_core.png")
+    })
+    task2_core.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/task2_core.png")
+    })
+    task3_core.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/task3_core.png")
+    })
+    task4_core.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/task4_core.png")
+    })
+    task5_core.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/task5_core.png")
+    })
+    core1_task.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/core1_task.png")
+    })
+    core2_task.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/core2_task.png")
+    })
+    core3_task.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/core3_task.png")
+    })
+    core4_task.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/core4_task.png")
+    })
+    core5_task.addEventListener('click', function(){
+        document.querySelector(".image").setAttribute("src","/core5_task.png")
+    })
+
+</script>
